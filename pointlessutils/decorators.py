@@ -25,3 +25,9 @@ def _never():
         pass
 
 never = _deco_factory(_never)
+
+def _always():
+    while True:
+        yield True
+
+always = _deco_factory(_always)
