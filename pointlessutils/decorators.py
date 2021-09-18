@@ -31,3 +31,11 @@ def _always():
         yield True
 
 always = _deco_factory(_always)
+
+def alwaysv(v):
+    def deco(func):
+        def wrapper(*args, **kwargs):
+            while True:
+                yield v() if isfunction(v) else v
+        return wrapper
+    return deco

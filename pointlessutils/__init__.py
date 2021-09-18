@@ -1,4 +1,4 @@
-from .decorators import always, false, maybe, never, none, true
+from .decorators import always, alwaysv, false, maybe, never, none, true
 
 __all__ = (
     "none",
@@ -7,4 +7,5 @@ __all__ = (
     "maybe",
     "never",
     "always",
+    "alwaysv",
 )

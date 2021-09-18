@@ -12,8 +12,9 @@ There are currently 6 pointless decorators available to use:
 - `@maybe` - Causes the function to return a random choice of `True` or `False`
 - `@never` - The function will never return and will block indefinitely
 - `@always` - The function is now a generator that indefinitely yields `True`
+- `@alwaysv(value)` - The function is now a generator that indefinitely yields the given value
 
-These decorators can be used on either normal or async functions. For example:
+These decorators can be used on either normal or async functions, except `alwaysv`. For example:
 
 ```py
 @maybe
