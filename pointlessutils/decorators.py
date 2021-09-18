@@ -19,3 +19,9 @@ none  = _deco_factory(None)
 true  = _deco_factory(True)
 false = _deco_factory(False)
 maybe = _deco_factory(lambda: choice([True, False]))
+
+def _never():
+    while True:
+        pass
+
+never = _deco_factory(_never)
